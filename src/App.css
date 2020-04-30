@@ -1,49 +1,48 @@
-  .App{
-    min-height: 100vh;
-    background-image: linear-gradient(to right, rgb(238, 156, 167), rgb(255, 221, 225));
-  }
-  
-  .search-form{
-    min-height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
-  .search-bar{
-    max-width: 320px;
-    min-width: 220px;
-    width: 45%;
-    border: none;
-    padding: 12px;
-    box-shadow: 0 0 5px 0 #00000040;
-    border-radius: 20px;
-  }
+* {
+  box-sizing: border-box;
+}
 
-  .search-button{
-    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
-    border: 1px solid #fe9a8b;
-    padding: 12px 15px;
-    color: white;
-    box-shadow: 0 0 5px 0 #00000040;
-    border-radius: 20px;
-    position: relative;
-    right: 43px;
-    top: -1px;
-  }
+html {
+  border: 15px solid #0a99ec;
+}
 
-  .search-bar:focus,
-  .search-bar:hover {
-    box-shadow: 0 0 5px 2px #00000040;
-    outline: none;
-  }
+body {
+  font-family: "Montserrat", sans-serif;
+}
 
-  .search-button:focus {
-    outline: none;
-  }
+.App {
+  min-height: 100vh;
+  background: white;
+}
 
-  .recipes{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
+.header {
+  text-align: center;
+  padding: 20px 40px 60px 40px;
+}
+
+.title {
+  color: #0a99ec;
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+.search-form {
+  min-height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.recipes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.search-filter {
+  max-width: 500px;
+  margin: 0 auto;
+}
